@@ -41,6 +41,12 @@ Ensure you have the following installed:
 ### **Register Page**
 ![Register Page](screenshots/register.png)
 
+### **Add Product**
+![Add Page](https://github.com/arib20/angular-inventory-wipro-preskilling/blob/main/screenshots/add%20product.png?raw=true)
+
+### **View Product**
+![View Page](https://github.com/arib20/angular-inventory-wipro-preskilling/blob/main/screenshots/product%20view.png?raw=true)
+
 
 
 ### **2️⃣ Clone the Repository**

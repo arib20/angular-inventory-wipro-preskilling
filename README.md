@@ -31,6 +31,15 @@ Ensure you have the following installed:
 
 ### **Product List**
 ![Product List](https://github.com/arib20/angular-inventory-wipro-preskilling/blob/main/screenshots/inventory.png?raw=true)
+## Screenshots 📸
+
+### **Login Page**
+![Login Page](screenshots/sign in.png)
+
+
+
+### **Register Page**
+![Add Product](screenshots/register.png)
 
 
 

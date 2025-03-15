@@ -25,6 +25,15 @@ Ensure you have the following installed:
   npm install -g @angular/cli
   ```
 
+  ## Screenshots 📸
+
+
+
+### **Product List**
+![Product List](https://github.com/arib20/angular-inventory-wipro-preskilling/blob/main/screenshots/inventory.png?raw=true)
+
+
+
 ### **2️⃣ Clone the Repository**
 ```bash
 git clone https://github.com/your-username/lab-angular-main.git

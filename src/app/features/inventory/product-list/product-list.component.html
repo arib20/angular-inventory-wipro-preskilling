@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Product List</h2>
+
+  <!-- Search Box -->
+  <input 
+      type="text" 
+      class="search-box" 
+      placeholder="Search..." 
+      [(ngModel)]="searchTerm" 
+      (input)="onSearch(searchTerm)" />
+
+  <!-- Product List -->
+  <ul class="product-list">
+    <li *ngFor="let product of filteredProducts" class="product-card">
+      <span><strong>{{ product.name }}</strong></span>
+      <div class="btn-group">
+        <button class="btn-view" (click)="viewProduct(product.id)">View</button>
+        <button class="btn-edit" (click)="editProduct(product.id)">Edit</button>
+        <button class="btn-delete" (click)="deleteProduct(product.id)">Delete</button>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Add Product Button -->
+  <a class="btn-add" routerLink="/inventory/add-product">Add Product</a>
+</div>

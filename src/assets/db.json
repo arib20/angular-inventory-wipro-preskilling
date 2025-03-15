@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "john.doe@example.com",
+      "password": "password123",
+      "firstName": "John",
+      "lastName": "Doe",
+      "location": "New York",
+      "mobileNumber": "1234567890"
+    },
+    {
+      "id": 2,
+      "email": "jane.smith@example.com",
+      "password": "password456",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "location": "Los Angeles",
+      "mobileNumber": "0987654321"
+    },
+    {
+      "email": "arijit.basak2001@gmail.com",
+      "password": "qwerty123",
+      "firstName": "arijit",
+      "lastName": "basak",
+      "location": "kolkata",
+      "mobileNumber": "7059637903",
+      "id": 3
+    },
+    {
+      "email": "qwerty@gmail.com",
+      "password": "123456789",
+      "firstName": "qwerty",
+      "lastName": "keyboard",
+      "location": "computer",
+      "mobileNumber": "0987654321",
+      "id": 4
+    },
+    {
+      "email": "arijit@project.com",
+      "password": "asdfghjkl",
+      "firstName": "Biswajit",
+      "lastName": "Basak",
+      "location": "Kolkata",
+      "mobileNumber": "9874339743",
+      "id": 5
+    },
+    {
+      "email": "abc@gmail.com",
+      "password": "arijitbasak",
+      "firstName": "Nolan",
+      "lastName": "Christopher",
+      "location": "America",
+      "mobileNumber": "5856314789",
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "name": "tablet",
+      "description": "apple macbook",
+      "manufacturer": "apple",
+      "price": 100000,
+      "quantity": 10,
+      "id": 1741974103231
+    },
+    {
+      "name": "Laptop",
+      "description": "This is Hp laptop",
+      "manufacturer": "HP",
+      "price": 55000,
+      "quantity": 100,
+      "id": 1742015112198
+    },
+    {
+      "name": "SmartPhone",
+      "description": "Samsung Smart Phone",
+      "manufacturer": "Samsung pvt.ltd",
+      "price": 100000,
+      "quantity": 500,
+      "id": 1742018933716
+    }
+  ]
+}

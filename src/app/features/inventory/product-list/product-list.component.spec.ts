@@ -5,6 +5,7 @@ import { SearchFilterComponent } from '../../../shared/search-filter/search-filt
 import { RouterTestingModule } from '@angular/router/testing';
 import { DataService } from '../../../core/data.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { FormsModule } from '@angular/forms'; 
 
 describe('ProductListComponent', () => {
   let fixture: ComponentFixture<ProductListComponent>;
@@ -13,7 +14,7 @@ describe('ProductListComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ProductListComponent, SearchFilterComponent],
-      imports: [RouterTestingModule, HttpClientTestingModule],
+      imports: [RouterTestingModule, HttpClientTestingModule, FormsModule], // Add FormsModule
       providers: [DataService]
     }).compileComponents();
 
@@ -62,7 +63,7 @@ describe('ProductListComponent', () => {
     });
 
     it('should render the Add Product button', () => {
-      const addProductButton = fixture.debugElement.query(By.css('button[routerLink="/inventory/add-product"]'));
+      const addProductButton = fixture.debugElement.query(By.css('a[routerLink="/inventory/add-product"]'));
       expect(addProductButton).toBeTruthy();
       expect(addProductButton.nativeElement.textContent).toBe('Add Product');
     });

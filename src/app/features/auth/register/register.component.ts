@@ -11,11 +11,19 @@ export class RegisterComponent {
 
   onRegister(form: any): void {
     if (form.valid) {
-      this.authService.register(form.value).subscribe(() => {
-        alert('Registration successful!');
+      const email = form.value.email;
+  
+      this.authService.checkEmailExists(email).subscribe((exists: boolean) => {
+        if (exists) {
+          alert('User already registered! Please log in.');
+        } else {
+          this.authService.register(form.value).subscribe(() => {
+            alert('Registration successful!');
+          });
+        }
       });
     } else {
       alert('Please fill out all required fields.');
     }
   }
-}
+}  

@@ -25,6 +25,12 @@ export class AuthService {
       })
     );
   }
+  checkEmailExists(email: string): Observable<boolean> {
+    return this.http.get<any[]>(`${this.apiUrl}/users`).pipe(
+      map(users => users.some(user => user.email === email))
+    );
+  }
+  
 
   logout(): void {
     localStorage.removeItem('currentUser');

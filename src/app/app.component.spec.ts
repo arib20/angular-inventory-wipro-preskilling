@@ -1,6 +1,9 @@
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './shared/footer/footer.component';
+import { HeaderComponent } from './shared/header/header.component'; // Import the HeaderComponent
 import { By } from '@angular/platform-browser';
 
 describe('AppComponent', () => {
@@ -9,8 +12,8 @@ describe('AppComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [AppComponent],
-            imports: [RouterTestingModule]
+            declarations: [AppComponent, HeaderComponent, FooterComponent], // Declare both HeaderComponent and FooterComponent
+            imports: [RouterTestingModule, HttpClientModule]
         }).compileComponents();
 
         fixture = TestBed.createComponent(AppComponent);

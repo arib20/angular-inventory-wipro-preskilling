@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { AuthService } from './core/auth.service';  // ✅ Import AuthService
-
+import { AuthService } from './core/auth.service';  
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,9 +8,9 @@ import { AuthService } from './core/auth.service';  // ✅ Import AuthService
 export class AppComponent {
   title = 'Product Inventory System';
 
-  constructor(public authService: AuthService) {}  // ✅ Inject AuthService
+  constructor(public authService: AuthService) {}  
 
   logout() {
-    this.authService.logout();  // ✅ Call logout method
+    this.authService.logout();  
   }
 }

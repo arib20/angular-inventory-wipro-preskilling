@@ -71,4 +71,6 @@
     border-radius: 4px;
     margin-top: 20px;
   }
-  
+  app-search-filter {
+    display: none;
+}

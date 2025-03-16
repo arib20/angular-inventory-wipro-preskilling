@@ -53,32 +53,67 @@
       "location": "America",
       "mobileNumber": "5856314789",
       "id": 6
+    },
+    {
+      "email": "wipro@wipro.com",
+      "password": "qwerty098",
+      "firstName": "John",
+      "lastName": "Cena",
+      "location": "India",
+      "mobileNumber": "7894561230",
+      "id": 7
+    },
+    {
+      "email": "john.doe@example.com",
+      "password": "password123",
+      "firstName": "John",
+      "lastName": "Doe",
+      "location": "New York",
+      "mobileNumber": "1234567890",
+      "id": 8
+    },
+    {
+      "email": "kalyani@wipro.com",
+      "password": "pass123",
+      "firstName": "kalyani",
+      "lastName": "basak",
+      "location": "india",
+      "mobileNumber": "6289896277",
+      "id": 9
     }
   ],
   "products": [
     {
-      "name": "tablet",
-      "description": "apple macbook",
-      "manufacturer": "apple",
-      "price": 100000,
-      "quantity": 10,
-      "id": 1741974103231
-    },
-    {
-      "name": "Laptop",
-      "description": "This is Hp laptop",
-      "manufacturer": "HP",
-      "price": 55000,
-      "quantity": 100,
-      "id": 1742015112198
-    },
-    {
+      "id": 1742018933716,
       "name": "SmartPhone",
       "description": "Samsung Smart Phone",
       "manufacturer": "Samsung pvt.ltd",
       "price": 100000,
+      "quantity": 50
+    },
+    {
+      "name": "keyboard",
+      "description": "mechanical keyboard",
+      "manufacturer": "cosmic byte",
+      "price": 10000,
+      "quantity": 5,
+      "id": 1742039004114
+    },
+    {
+      "name": "tablet",
+      "description": "Apple Ipad",
+      "manufacturer": "Apple Inc",
+      "price": 10000,
       "quantity": 500,
-      "id": 1742018933716
+      "id": 1742137447910
+    },
+    {
+      "name": "RTX 5090",
+      "description": "Graphics Card for gamming",
+      "manufacturer": "NVDIA",
+      "price": 300000,
+      "quantity": 10,
+      "id": 1742138442781
     }
   ]
 }

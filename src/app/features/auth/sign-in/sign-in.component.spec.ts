@@ -52,7 +52,7 @@ describe('SignInComponent', () => {
 
       const submitButton = fixture.debugElement.query(By.css('button[type="submit"]'));
       expect(submitButton).toBeTruthy();
-      expect(submitButton.nativeElement.textContent).toBe('Login');
+      expect(submitButton.nativeElement.textContent).toBe('Sign In');
     });
 
     it('should call AuthService login method on form submission', () => {

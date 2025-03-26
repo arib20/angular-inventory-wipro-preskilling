@@ -18,7 +18,7 @@ describe('DataService', () => {
   });
 
   afterEach(() => {
-    httpTestingController.verify(); // Ensure no outstanding HTTP requests
+    httpTestingController.verify(); 
   });
 
   describe('boundary', () => {
@@ -73,7 +73,7 @@ describe('DataService', () => {
 
     it('should send a DELETE request to delete a product by ID', () => {
       service.deleteProduct(1).subscribe((response: any) => {
-        expect(response).toBeNull(); // DELETE often returns null or empty response
+        expect(response).toBeNull(); 
       });
 
       const req = httpTestingController.expectOne(`${apiUrl}/products/1`);

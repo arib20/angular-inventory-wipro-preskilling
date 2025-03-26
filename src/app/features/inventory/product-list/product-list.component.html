@@ -1,7 +1,7 @@
 <div class="container">
-  <h2>Product List</h2>
+  <h1>Product List</h1>
 
-  <!-- Search Box -->
+  
   <input 
       type="text" 
       class="search-box" 
@@ -9,7 +9,7 @@
       [(ngModel)]="searchTerm" 
       (input)="onSearch(searchTerm)" />
 
-  <!-- Product List -->
+  
   <ul class="product-list">
     <li *ngFor="let product of filteredProducts" class="product-card">
       <span><strong>{{ product.name }}</strong></span>
@@ -21,7 +21,7 @@
     </li>
   </ul>
 
-  <!-- Add Product Button -->
+  
   <a class="btn-add" routerLink="/inventory/add-product">Add Product</a>
 </div>
 

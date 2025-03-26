@@ -4,13 +4,14 @@
     padding: 20px;
   }
   
-  h2 {
+  h1 {
+    font-size: 40px;
     text-align: center;
     color: #007bff;
     margin-bottom: 20px;
   }
   
-  /* Search Bar */
+  
   .search-box {
     width: 100%;
     padding: 8px;
@@ -19,7 +20,7 @@
     margin-bottom: 20px;
   }
   
-  /* Product List Styling */
+  
   .product-list {
     list-style: none;
     padding: 0;

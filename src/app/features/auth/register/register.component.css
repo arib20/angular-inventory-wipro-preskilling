@@ -1,9 +1,8 @@
 .auth-container {
     max-width: 350px;
-    margin: 100px auto; /* Centers the form */
+    margin: 100px auto; 
     padding: 20px;
-    border: 1px solid #ddd; /* Light border for clarity */
-    border-radius: 8px;
+    border: 1px solid #ddd; 
     background: #fff;
     text-align: center;
   }
@@ -14,7 +13,7 @@
   
   .form-group {
     margin-bottom: 10px;
-    text-align: left; /* Align labels properly */
+    text-align: left; 
   }
   
   input {

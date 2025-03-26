@@ -17,7 +17,7 @@
           <a class="nav-link" routerLink="/about">About</a>
         </li>
         
-        <!-- Show Register & Login if NOT logged in -->
+        
         <li class="nav-item" *ngIf="!authService.isLoggedIn()">
           <a class="nav-link btn btn-light text-primary me-2" routerLink="/auth/register">Register</a>
         </li>
@@ -25,7 +25,7 @@
           <a class="nav-link btn btn-outline-light" routerLink="/auth/sign-in">Login</a>
         </li>
 
-        <!-- Show Logout if logged in -->
+        
         <li class="nav-item" *ngIf="authService.isLoggedIn()">
           <button class="nav-link btn btn-danger" (click)="logout()">Logout</button>
         </li>

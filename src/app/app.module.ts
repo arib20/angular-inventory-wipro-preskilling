@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CookieService } from 'ngx-cookie-service';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -8,10 +9,12 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaintenanceComponent } from './maintenance/maintenance.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MaintenanceComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SharedModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent],
 
 })

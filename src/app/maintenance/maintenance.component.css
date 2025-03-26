@@ -1,0 +1,43 @@
+.maintenance-container {
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    h1 {
+      font-size: 2.5rem;
+      color: #ff6f61;
+      margin-bottom: 10px;
+      animation: blink 1.5s infinite alternate;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+  
+    img {
+      width: 300px;
+      animation: float 3s infinite ease-in-out;
+    }
+  }
+  
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
+  
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  

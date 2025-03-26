@@ -19,12 +19,12 @@ describe('UpdateProductComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [UpdateProductComponent],
       imports: [
-        ReactiveFormsModule, // Import ReactiveFormsModule for form handling
-        HttpClientTestingModule // Import HttpClientTestingModule to mock HttpClient
+        ReactiveFormsModule, 
+        HttpClientTestingModule 
       ],
       providers: [
         { provide: ActivatedRoute, useValue: mockActivatedRoute },
-        DataService // Ensure DataService is included in providers
+        DataService 
       ]
     }).compileComponents();
 

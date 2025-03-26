@@ -38,7 +38,7 @@ export class UpdateProductComponent implements OnInit {
       this.dataService.getProductById(this.productId).subscribe(
         (product) => {
           if (product) {
-            // Populate the form with product data
+            
             this.updateProductForm.patchValue(product);
           } else {
             alert('Product not found.');
@@ -56,7 +56,7 @@ export class UpdateProductComponent implements OnInit {
 
   onUpdate(): void {
     if (this.updateProductForm.valid && this.productId !== null) {
-      // Update product data
+      
       const updatedProduct = { id: this.productId, ...this.updateProductForm.value };
       this.dataService.updateProduct(updatedProduct).subscribe(
         () => {

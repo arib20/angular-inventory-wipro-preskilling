@@ -5,6 +5,7 @@ import { SignInComponent } from './sign-in.component';
 import { AuthService } from '../../../core/auth.service';
 import { Router } from '@angular/router';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { of } from 'rxjs';
 
 describe('SignInComponent', () => {
   let fixture: ComponentFixture<SignInComponent>;
@@ -14,7 +15,7 @@ describe('SignInComponent', () => {
 
   beforeEach(async () => {
     mockAuthService = {
-      login: jest.fn().mockReturnValue(true) // Mock successful login
+      login: jest.fn().mockReturnValue(of({ token: 'mockToken' })) 
     } as unknown as jest.Mocked<AuthService>;
 
     mockRouter = {
